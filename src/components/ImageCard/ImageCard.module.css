@@ -1,0 +1,49 @@
+.galleryLink {
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.imageCard {
+  object-fit: cover;
+  height: 100%;
+  width: auto;
+}
+
+.galleryCardListInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 20px;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid hsla(0, 0%, 50%, 0.2);
+  background-color: whitesmoke;
+}
+
+.galleryCardListInfoTitle {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.galleryCardListInfoText {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
