@@ -37,7 +37,7 @@ const App: React.FC = () => {
         setIsLoading(true);
         setIsError(false);
 
-        const data: ResponseData = await fetchImages(query, page);
+        const data = await fetchImages<ResponseData>(query, page);
 
         setImagesList(prev => [...prev, ...data.results]);
         setIsLoadMore(page < data.total_pages);
